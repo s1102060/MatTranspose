@@ -53,7 +53,13 @@ public:
 	}
 	void transpose()
 	{
-
+		int i, j;
+		for (j = 0; j < col; j++)
+		{
+			for (i = 0; i < row; i++)
+				cout << cell[i][j] << "\t";
+			cout << endl;
+		}
 	}
 };
 class App
